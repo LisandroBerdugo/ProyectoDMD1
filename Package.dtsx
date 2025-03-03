@@ -1,0 +1,3345 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/3/2025 6:22:28 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-SFDO9SH"
+  DTS:CreatorName="DESKTOP-SFDO9SH\DMD"
+  DTS:DTSID="{B4F9C9DA-81B1-438C-8C3F-667EFF1F0E42}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="17418"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{E64061CC-B9FF-414F-A7B4-A73B3F99AE5B}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B07B0E92-3809-496C-BC22-9F5846ECA8FD}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\DMD\Desktop\Proyecto_ETL_BA131462\SantaAnaDMD.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{667633F9-AD10-4CE2-A647-9895597830EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{D67D32C0-528A-4B6A-A345-31D51F5BE0D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{7430A3AB-6499-45A8-903D-D67CAF927FDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{9312930A-0877-43A5-8B86-BEA5EE3A665E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{38D42A78-D10F-407E-BE6D-100E1CF0F31B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{8A57861C-93F9-44BC-B77A-C018143B6541}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{55DF56A8-2309-493D-B058-47B3AD895EBE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{B8783440-C374-4F70-AC18-2E68D15D0796}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{23E1D8BE-50E5-4D85-9DBE-76AC7E5A6A3E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fOrquídias"
+              DTS:DTSID="{648F3B2E-FCF9-4F81-A0FD-351878E34665}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Carmesí"
+              DTS:DTSID="{F760CE20-2ED5-4A4B-8068-9844F68285CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{EBDBB9DD-3CAB-421C-8E79-76F5D1AD0175}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{B2BC80DD-886E-4486-BEF3-FB5DB7BA5193}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{45646328-04D4-4DD9-9964-04213C15AB03}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Listón"
+              DTS:DTSID="{D56B353B-4414-4B00-9674-FC956F44A069}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{29D63B50-5EC8-44D5-B548-9C8ABA0EE556}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\DMD\Desktop\Proyecto_ETL_BA131462\SanSalvadorDMD.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{EA37534F-5EDD-4AAF-AAA1-1EA564472AFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{FC889392-C4A9-4345-8BEA-A8402E28830E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{765C4866-D9C3-4060-BC0F-9138312A4051}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{163404EF-ECCA-48BD-BAE8-906944926871}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{DFAB8FB9-ADC2-471C-9C1C-92581FB1AE47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{45D6ADB2-1FE9-410B-AB43-120AE94DBDFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{D27C0914-1DDD-4A12-811A-9865AB4A4DFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{F3FD66F4-4E69-4BDD-B30D-D9C003B4694F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{3E7C3348-FE33-4366-8142-4D2CAE235389}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fOrquÃ­dias"
+              DTS:DTSID="{F982DD7C-022E-4392-B5C7-1DDFD57357D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CarmesÃ­"
+              DTS:DTSID="{09F06170-ADC7-4ED2-90C8-7E5EC3F65078}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{EC857A26-6FBC-49B0-92EE-11B298423BC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{B3FA542A-EF46-44DB-8AF8-D578BA70353A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{ED3C760C-2F95-4043-8B20-22823E925D86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ListÃ³n"
+              DTS:DTSID="{6B2E5E07-C6BC-491B-B18A-76DFD30A531C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D58B56B1-C369-4950-B466-2162327DA203}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\DMD\Desktop\Proyecto_ETL_BA131462\SantaAnaDMD.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{B98C7D4D-C01E-4BF4-9671-805F7F77733D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{AC496879-6FA8-4CA0-A73E-2AE41073E82C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{8509AE4C-C78B-4546-A071-F459CDEA0267}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{D2F9910B-D64B-4A52-95BD-E90270463591}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{5859E46F-4B02-4007-9FED-4F2183418405}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{0F1330BC-06FC-49A0-8482-6A89361101C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{ED535304-7E14-42F4-A4EF-CE5492EA1B7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{603FABC0-74EE-4EE4-91D9-2B47D6F7082B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{C603E923-BB91-44B5-BA5B-16AC66A6BF65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fOrquídias"
+              DTS:DTSID="{14387249-7466-4CE6-B6FD-299D97FA0754}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Carmesí"
+              DTS:DTSID="{3B17EBE3-1051-4D5D-B290-1D2829ED834A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{6D61023C-1194-496E-8932-4D1869A32A04}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{BA39ED56-ABEA-427E-9DD5-35E2D876389B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{05EB38B9-729B-477B-AB6B-F3D3150BEBA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Listón"
+              DTS:DTSID="{B4EB87DC-76DA-4DF0-B99F-A9D7F39EF81E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4447FDA5-FCC0-4933-ABF7-E44969DCE3D7}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\DMD\Desktop\Proyecto_ETL_BA131462\SanSalvadorDMD.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{7B440747-EF6F-4110-9E3F-D71C3A644E3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{6CD20505-2325-4ECE-B6DF-C247CCF202AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{8F5D9FD0-8364-4209-80F1-E5635CB0FDF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{7E4ED268-237A-4633-AF5A-F3318DE01A62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{D40CE471-E62B-4D14-AC8B-D4E0570787C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{8E6FA22A-F74D-4D5A-8D90-D4D34F70F63B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{B7740DC8-E1BF-49FA-8D61-9AC59D75DFB8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{2F186D27-AF8B-42FE-A377-03D82A64DA33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{19097BAF-2861-4681-B148-7372A6371746}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fOrquídias"
+              DTS:DTSID="{41873102-A56C-4736-8B89-7AAF9D885E2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Carmesí"
+              DTS:DTSID="{6F139160-78AE-420A-A882-BBCE4E8F2111}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{8D796FCD-887B-41B7-A120-24EC5B9B00BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{4ED5BB73-4D1F-4F33-8F9F-EE53DD50DAB3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{B87B8E10-AAF1-4FAC-9080-380DA6199626}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Listón"
+              DTS:DTSID="{82A20994-C27D-4F8B-9E52-0C06B00A6127}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4FC8C41C-90B1-4C5A-974F-CB6FA34E8E40}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\DMD\Desktop\Proyecto_ETL_BA131462\SanMiguelDMD.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{9AB05469-685B-4DD0-9A15-87CBEB0B48C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{F48B822F-1F0B-4619-9548-B4F4EC7FD81C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{919A98C7-0CBD-49A3-B846-85F21CD6CEE4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{F7CE14E9-4F67-47F6-8FC6-4DB13D36EC3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{656B9538-5AD7-40FA-8230-F9BC488ABA85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{5B9584EA-589E-4795-A64E-59E8191F1E69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{60E35524-FFC8-4B5B-80EC-9A65456F6E84}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{DC0EEB3A-313B-4B7E-BE0A-339B0AA326EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{F2D2D335-DA0C-4431-9260-5166F79A0FA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fOrquídias"
+              DTS:DTSID="{9BB6EF9F-8EC6-4230-8FD8-9EDBC2973DE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Carmesí"
+              DTS:DTSID="{AB9BD7B3-4D44-417F-A21A-CBF51BAD4C8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{A90B3F06-5349-410A-995E-559D86C963A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{78F4482D-5CDB-48F8-81AC-67BBA369BAF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{A11A75FF-E43C-48D5-B29D-67B0164C1C31}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Listón"
+              DTS:DTSID="{031BDD75-4C6E-4477-ABE1-D94E0DEF084B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A8E0441B-6BB3-4775-ADFA-A4C6A1D1A393}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ConteoFilas">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Cargar_CSV_Clientes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{6799550C-77C2-4461-BB9C-FD818B94358D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar_CSV_Clientes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Cargar_CSV_Clientes\Datos San Miguel"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="17418"
+              name="Datos San Miguel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 4]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Rosas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Rosas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Rosas]"
+                      name="Rosas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Claveles]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Claveles]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Claveles]"
+                      name="Claveles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Macetas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Macetas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Macetas]"
+                      name="Macetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tierra]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Tierra]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tierra]"
+                      name="Tierra"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Girasoles]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Girasoles]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Girasoles]"
+                      name="Girasoles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Hortensia]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Hortensia]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Hortensia]"
+                      name="Hortensia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Globos]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Globos]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Globos]"
+                      name="Globos"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Tarjetas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]"
+                      name="Tarjetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[fOrquídias]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]"
+                      name="fOrquídias"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Carmesí]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Carmesí]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Carmesí]"
+                      name="Carmesí"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Lirios]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Lirios]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Lirios]"
+                      name="Lirios"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Aurora]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Aurora]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Aurora]"
+                      name="Aurora"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Tulipanes]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]"
+                      name="Tulipanes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Listón]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Listón]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Listón]"
+                      name="Listón"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Rosas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Rosas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Claveles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Claveles" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Macetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Macetas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Tierra]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tierra" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Girasoles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Girasoles" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Hortensia]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Hortensia" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Globos]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Globos" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Tarjetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tarjetas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[fOrquídias]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="fOrquídias" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Carmesí]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Carmesí" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Lirios]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Lirios" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Aurora]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Aurora" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Tulipanes]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tulipanes" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].ExternalColumns[Listón]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Listón" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cargar_CSV_Clientes\Datos San Salvador"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="17418"
+              name="Datos San Salvador"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Rosas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Rosas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Rosas]"
+                      name="Rosas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Claveles]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Claveles]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Claveles]"
+                      name="Claveles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Macetas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Macetas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Macetas]"
+                      name="Macetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tierra]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Tierra]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tierra]"
+                      name="Tierra"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Girasoles]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Girasoles]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Girasoles]"
+                      name="Girasoles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Hortensia]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Hortensia]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Hortensia]"
+                      name="Hortensia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Globos]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Globos]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Globos]"
+                      name="Globos"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Tarjetas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]"
+                      name="Tarjetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Lirios]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Lirios]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Lirios]"
+                      name="Lirios"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Aurora]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Aurora]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Aurora]"
+                      name="Aurora"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Tulipanes]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]"
+                      name="Tulipanes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[fOrquídias]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]"
+                      name="fOrquídias"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Carmesí]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Carmesí]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Carmesí]"
+                      name="Carmesí"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Listón]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Listón]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Listón]"
+                      name="Listón"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Rosas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Rosas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Claveles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Claveles" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Macetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Macetas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Tierra]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tierra" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Girasoles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Girasoles" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Hortensia]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Hortensia" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Globos]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Globos" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Tarjetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tarjetas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Lirios]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Lirios" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Aurora]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Aurora" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Tulipanes]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tulipanes" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[fOrquídias]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="fOrquídias" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Carmesí]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Carmesí" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].ExternalColumns[Listón]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Listón" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cargar_CSV_Clientes\Datos Santa Ana"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="17418"
+              name="Datos Santa Ana"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Rosas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Rosas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Rosas]"
+                      name="Rosas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Claveles]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Claveles]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Claveles]"
+                      name="Claveles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Macetas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Macetas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Macetas]"
+                      name="Macetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tierra]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Tierra]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tierra]"
+                      name="Tierra"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Girasoles]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Girasoles]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Girasoles]"
+                      name="Girasoles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Hortensia]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Hortensia]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Hortensia]"
+                      name="Hortensia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Globos]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Globos]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Globos]"
+                      name="Globos"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Tarjetas]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]"
+                      name="Tarjetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[fOrquídias]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]"
+                      name="fOrquídias"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Carmesí]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Carmesí]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Carmesí]"
+                      name="Carmesí"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Lirios]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Lirios]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Lirios]"
+                      name="Lirios"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Aurora]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Aurora]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Aurora]"
+                      name="Aurora"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Tulipanes]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]"
+                      name="Tulipanes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Listón]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Listón]"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Listón]"
+                      name="Listón"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Rosas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Rosas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Claveles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Claveles" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Macetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Macetas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Tierra]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tierra" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Girasoles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Girasoles" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Hortensia]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Hortensia" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Globos]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Globos" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Tarjetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tarjetas" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[fOrquídias]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="fOrquídias" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Carmesí]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Carmesí" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Lirios]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Lirios" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Aurora]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Aurora" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Tulipanes]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Tulipanes" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].ExternalColumns[Listón]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Listón" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cargar_CSV_Clientes\Recuento de filas"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Recuento de filas;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Cuenta las filas a medida que pasan por un flujo de datos. Por ejemplo, se usa el número de filas procesadas para determinar si deben o no realizarse operaciones de limpieza o actualizar el texto de un mensaje de correo electrónico para comunicar el estado de procesamiento."
+              name="Recuento de filas">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el recuento de filas."
+                  name="VariableName">User::ConteoFilas</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Cargar_CSV_Clientes\Recuento de filas.Inputs[Entrada de Recuento de filas 1]"
+                  hasSideEffects="true"
+                  name="Entrada de Recuento de filas 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Recuento de filas.Outputs[Salida de Recuento de filas 1]"
+                  name="Salida de Recuento de filas 1"
+                  synchronousInputId="Package\Cargar_CSV_Clientes\Recuento de filas.Inputs[Entrada de Recuento de filas 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cargar_CSV_Clientes\Unión de todo"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Unión de todo;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Combina las filas de varios flujos de datos sin ordenarlos. Por ejemplo, devuelve filas a un flujo de datos después de corregir los errores. Si el orden es importante, se recomienda usar la transformación Mezclar."
+              name="Unión de todo"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1]"
+                  name="Entrada de Unión de todo 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[id]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Rosas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Rosas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Rosas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Rosas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Claveles]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Claveles"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Claveles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Claveles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Macetas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Macetas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Macetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Macetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Tierra]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tierra"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tierra]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tierra]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Girasoles]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Girasoles"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Girasoles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Girasoles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Hortensia]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Hortensia"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Hortensia]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Hortensia]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Globos]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Globos"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Globos]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Globos]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Tarjetas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tarjetas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tarjetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[fOrquídias]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fOrquídias"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fOrquídias]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Carmesí]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Carmesí"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Carmesí]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Carmesí]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Lirios]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Lirios"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Lirios]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Lirios]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Aurora]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Aurora"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Aurora]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Aurora]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Tulipanes]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tulipanes"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tulipanes]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[Listón]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Listón"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano].Columns[Listón]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Listón]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2]"
+                  hasSideEffects="true"
+                  name="Entrada de Unión de todo 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[id]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Rosas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Rosas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Rosas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Rosas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Claveles]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Claveles"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Claveles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Claveles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Macetas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Macetas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Macetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Macetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Tierra]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tierra"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tierra]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tierra]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Girasoles]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Girasoles"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Girasoles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Girasoles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Hortensia]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Hortensia"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Hortensia]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Hortensia]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Globos]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Globos"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Globos]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Globos]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Tarjetas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tarjetas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tarjetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Lirios]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Lirios"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Lirios]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Lirios]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Aurora]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Aurora"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Aurora]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Aurora]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Tulipanes]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tulipanes"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tulipanes]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[fOrquídias]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fOrquídias"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fOrquídias]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Carmesí]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Carmesí"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Carmesí]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Carmesí]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[Listón]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Listón"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano].Columns[Listón]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Listón]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3]"
+                  hasSideEffects="true"
+                  name="Entrada de Unión de todo 3">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[id]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Rosas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Rosas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Rosas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Rosas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Claveles]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Claveles"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Claveles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Claveles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Macetas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Macetas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Macetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Macetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Tierra]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tierra"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tierra]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tierra]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Girasoles]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Girasoles"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Girasoles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Girasoles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Hortensia]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Hortensia"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Hortensia]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Hortensia]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Globos]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Globos"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Globos]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Globos]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Tarjetas]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tarjetas"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tarjetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tarjetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[fOrquídias]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fOrquídias"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[fOrquídias]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fOrquídias]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Carmesí]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Carmesí"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Carmesí]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Carmesí]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Lirios]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Lirios"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Lirios]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Lirios]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Aurora]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Aurora"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Aurora]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Aurora]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Tulipanes]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tulipanes"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Tulipanes]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tulipanes]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3].Columns[Listón]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Listón"
+                      lineageId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano].Columns[Listón]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Listón]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 4]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Entrada de Unión de todo 4">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1]"
+                  name="Salida de Unión de todo 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Rosas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Rosas]"
+                      name="Rosas" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Claveles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Claveles]"
+                      name="Claveles" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Macetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Macetas]"
+                      name="Macetas" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tierra]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tierra]"
+                      name="Tierra" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Girasoles]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Girasoles]"
+                      name="Girasoles" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Hortensia]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Hortensia]"
+                      name="Hortensia" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Globos]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Globos]"
+                      name="Globos" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tarjetas]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tarjetas]"
+                      name="Tarjetas" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fOrquídias]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fOrquídias]"
+                      name="fOrquídias" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Carmesí]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Carmesí]"
+                      name="Carmesí" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Lirios]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Lirios]"
+                      name="Lirios" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Aurora]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Aurora]"
+                      name="Aurora" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tulipanes]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Tulipanes]"
+                      name="Tulipanes" />
+                    <outputColumn
+                      refId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Listón]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[Listón]"
+                      name="Listón" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Cargar_CSV_Clientes.Paths[Salida de origen de archivo plano]"
+              endId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 1]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Cargar_CSV_Clientes\Datos Santa Ana.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\Cargar_CSV_Clientes.Paths[Salida de origen de archivo plano1]"
+              endId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 2]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Cargar_CSV_Clientes\Datos San Salvador.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\Cargar_CSV_Clientes.Paths[Salida de origen de archivo plano2]"
+              endId="Package\Cargar_CSV_Clientes\Unión de todo.Inputs[Entrada de Unión de todo 3]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Cargar_CSV_Clientes\Datos San Miguel.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\Cargar_CSV_Clientes.Paths[Salida de Unión de todo 1]"
+              endId="Package\Cargar_CSV_Clientes\Recuento de filas.Inputs[Entrada de Recuento de filas 1]"
+              name="Salida de Unión de todo 1"
+              startId="Package\Cargar_CSV_Clientes\Unión de todo.Outputs[Salida de Unión de todo 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Cargar_CSV_Clientes"
+          TopLeft="185,129" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Cargar_CSV_Clientes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Cargar_CSV_Clientes\Datos Santa Ana"
+          TopLeft="14,51" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Cargar_CSV_Clientes\Unión de todo"
+          TopLeft="154,271" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Cargar_CSV_Clientes\Datos San Salvador"
+          TopLeft="233,52" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Cargar_CSV_Clientes\Datos San Miguel"
+          TopLeft="327,134" />
+        <EdgeLayout
+          Id="Package\Cargar_CSV_Clientes.Paths[Salida de origen de archivo plano]"
+          TopLeft="92.5,93">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99.75,178"
+              Start="0,0"
+              End="99.75,170.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,112.523702031603" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,112.523702031603"
+                    Point2="0,116.523702031603"
+                    Point3="4,116.523702031603" />
+                  <mssgle:LineSegment
+                    End="95.75,116.523702031603" />
+                  <mssgle:CubicBezierSegment
+                    Point1="95.75,116.523702031603"
+                    Point2="99.75,116.523702031603"
+                    Point3="99.75,120.523702031603" />
+                  <mssgle:LineSegment
+                    End="99.75,170.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargar_CSV_Clientes.Paths[Salida de origen de archivo plano1]"
+          TopLeft="318.5,94">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-92,177"
+              Start="0,0"
+              End="-92,169.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,84.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,84.5"
+                    Point2="0,88.5"
+                    Point3="-4,88.5" />
+                  <mssgle:LineSegment
+                    End="-88,88.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-88,88.5"
+                    Point2="-92,88.5"
+                    Point3="-92,92.5" />
+                  <mssgle:LineSegment
+                    End="-92,169.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargar_CSV_Clientes.Paths[Salida de origen de archivo plano2]"
+          TopLeft="407.5,176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-146.75,95"
+              Start="0,0"
+              End="-146.75,87.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.1896162528217" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,58.1896162528217"
+                    Point2="0,62.1896162528217"
+                    Point3="-4,62.1896162528217" />
+                  <mssgle:LineSegment
+                    End="-142.75,62.1896162528217" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-142.75,62.1896162528217"
+                    Point2="-146.75,62.1896162528217"
+                    Point3="-146.75,66.1896162528217" />
+                  <mssgle:LineSegment
+                    End="-146.75,87.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Cargar_CSV_Clientes\Recuento de filas"
+          TopLeft="247,402" />
+        <EdgeLayout
+          Id="Package\Cargar_CSV_Clientes.Paths[Salida de Unión de todo 1]"
+          TopLeft="226.5,313">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="100.5,89"
+              Start="0,0"
+              End="100.5,81.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.5"
+                    Point2="0,44.5"
+                    Point3="4,44.5" />
+                  <mssgle:LineSegment
+                    End="96.5,44.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="96.5,44.5"
+                    Point2="100.5,44.5"
+                    Point3="100.5,48.5" />
+                  <mssgle:LineSegment
+                    End="100.5,81.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
